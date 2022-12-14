@@ -119,11 +119,29 @@
   margin-top: -1rem;
 }
 
+.container #right-section #main #graphs .graphs-box1-headings3 {
+  position: relative;
+  top: 10px;
+  color: #FFF;
+  font-size: 0.95em;
+  left: 30px;
+  z-index: 1;
+}
+
+.container #right-section #main #graphs .graphs-box1-headings1 {
+  position: relative;
+  top: -50px;
+  color: #FFF;
+  font-size: 0.95em;
+  left: 80px;
+  z-index: 1;
+  display: inline-block;
+}
+
 .container #right-section #main #graphs #graphs-box1,
 .container #right-section #main #graphs #graphs-box2,
 .container #right-section #main #graphs #graphs-box3 {
   height: 30%;
-  background-color: blueviolet;
   margin: 1em;
 }
 
@@ -135,10 +153,27 @@
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   grid-gap: 1rem;
+  border-radius: 2em;
 }
 
-.container #right-section #main #graphs #graphs-box1 section {
+.container #right-section #main #graphs #graphs-box1 section#graphBox-sect1, .container #right-section #main #graphs #graphs-box1 section#graphBox-sect2, .container #right-section #main #graphs #graphs-box1 section#graphBox-sect3 {
   background: #262739;
+  max-width: 100%;
+  border-radius: 2em;
+}
+
+.container #right-section #main #graphs #graphs-box1 section#graphBox-sect1 .myGraph1, .container #right-section #main #graphs #graphs-box1 section#graphBox-sect2 .myGraph1, .container #right-section #main #graphs #graphs-box1 section#graphBox-sect3 .myGraph1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -20px;
+  z-index: 0;
+  display: inline-block;
+  border-radius: 2em;
+}
+
+.container #right-section #main #graphs #graphs-box1 section#graphBox-sect1 .myGraph1 canvas, .container #right-section #main #graphs #graphs-box1 section#graphBox-sect2 .myGraph1 canvas, .container #right-section #main #graphs #graphs-box1 section#graphBox-sect3 .myGraph1 canvas {
+  border-radius: 2em;
 }
 
 .container #right-section #main #feedback {

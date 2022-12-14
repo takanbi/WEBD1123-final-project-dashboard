@@ -120,11 +120,28 @@
         // background-color: blue;
         padding: 1rem;
         margin-top: -1rem;
+        .graphs-box1-headings3 {
+          position: relative;
+          top: 10px;
+          color: #FFF;
+          font-size: 0.95em;
+          left: 30px;
+          z-index: 1;
+        }
+        .graphs-box1-headings1 {
+          position: relative;
+          top: -50px;
+          color: #FFF;
+          font-size: 0.95em;
+          left: 80px;
+          z-index: 1;
+          display: inline-block;
+        }
         #graphs-box1,
         #graphs-box2,
         #graphs-box3 {
           height: 30%;
-          background-color: blueviolet;
+          // background-color: blueviolet;
           margin: 1em;
         }
         #graphs-box1 {
@@ -132,8 +149,26 @@
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: 100%;
           grid-gap: 1rem;
-          section {
+          border-radius: 2em;
+          section#graphBox-sect1, section#graphBox-sect2, section#graphBox-sect3 {
             background: rgb(38, 39, 57);
+            max-width: 100%;
+            border-radius: 2em;
+            .myGraph1 {
+              // background-color: red;
+              width: 100%;
+              height: 100%;
+              position: relative;
+              top: -20px;
+              z-index: 0;
+              display: inline-block;
+              border-radius: 2em;
+              canvas {
+                border-radius: 2em;
+              }
+              
+            }
+
           }
         }
       }
