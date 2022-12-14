@@ -40,7 +40,6 @@
 }
 
 .container #right-section header h3 {
-  background-color: red;
   background-size: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#6a40cc), to(#df37be));
   background-image: linear-gradient(90deg, #6a40cc, #df37be);
@@ -58,10 +57,51 @@
   border-radius: 50%;
   background-color: white;
   margin: 0 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.container #right-section header input {
+.container #right-section header span img {
+  width: 1em;
+  height: 1em;
+}
+
+.container #right-section header #search-field {
+  position: relative;
   margin-left: auto;
+  height: 30px;
+  width: 200px;
+  background-color: #262739;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container #right-section header #search-field .fa-search {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container #right-section header #search-field input[type="search"] {
+  background: transparent;
+  border: none;
+  position: absolute;
+  left: 2rem;
+  height: 100%;
+  outline-style: none;
+  cursor: pointer;
 }
 
 .container #right-section #main {
@@ -73,17 +113,32 @@
 }
 
 .container #right-section #main #graphs {
-  width: 75%;
+  width: 100%;
   height: 100%;
-  background-color: blue;
+  padding: 1rem;
+  margin-top: -1rem;
 }
 
-.container #right-section #main #graphs #box1,
-.container #right-section #main #graphs #box2,
-.container #right-section #main #graphs #box3 {
+.container #right-section #main #graphs #graphs-box1,
+.container #right-section #main #graphs #graphs-box2,
+.container #right-section #main #graphs #graphs-box3 {
   height: 30%;
   background-color: blueviolet;
   margin: 1em;
+}
+
+.container #right-section #main #graphs #graphs-box1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  grid-gap: 1rem;
+}
+
+.container #right-section #main #graphs #graphs-box1 section {
+  background: #262739;
 }
 
 .container #right-section #main #feedback {
